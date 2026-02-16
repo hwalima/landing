@@ -412,21 +412,4 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ========================================
-// Smooth Hover Effects for Cards
-// ========================================
-function addCardHoverEffects() {
-    const cards = document.querySelectorAll('.feature-card, .pricing-card, .testimonial-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = '';
-        });
-    });
-}
 
-addCardHoverEffects();
